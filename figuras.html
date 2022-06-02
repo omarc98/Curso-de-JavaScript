@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas | Curso JS Practico de Platzi</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <header>
+    <h1>
+        Figuras Geométricas
+    </h1>
+    <script src="./figuras.js"></script> <!--Esta es una forma pero no la que se deba usar siempre-->
+    <p>Este es el primer taller del curso de JavaScript</p>
+    </header>
+    <main class="container">
+    <section class="box1">
+        <h2 class="box1-title">Calculadora del área y perímetro de un cuadrado</h2>
+        <form class="input1">
+            <label for="InputCuadrado">
+                Escribe cuanto mide el lado de tu cuadrado:
+            </label>
+            <input id="InputCuadrado"  type="number">
+            <button type="button" onclick="calcularperimetroCuadrado()">
+                Calcular el perímetro:
+            </button>
+            <button type="button" onclick="calcularareaCuadrado()">
+                Calcular el área:
+            </button>
+        </form>
+    </section>
+    <section class="box2">
+        <h2 class="box2-title">Calculadora del área y perímetro de un rectángulo</h2>
+        <form class="input2">
+            <label for="InputRectangulo-base">
+                Escribe cuanto mide el largo del rectángulo:
+            </label>
+            <input id="InputRectangulo-base"  type="number">
+
+            <label for="InputRectangulo-altura">
+                Escribe cuanto mide el ancho o alto del rectángulo
+            </label>
+            <input id="InputRectangulo-altura" type="number">
+            
+            <button type="button" onclick="calcularperimetroRectangulo()">
+                Calcular el perímetro:
+            </button>
+            <button type="button" onclick="calcularareaRectangulo()">
+                Calcular el área:
+            </button>
+        </form>
+    </section>
+    <section class="box3">
+        <h2>Calculadora del área y perímetro de un triángulo</h2>
+        <form>
+            <label for="InputLado1">
+                Escribe cuanto mide un lado de tu triangulo:
+            </label>
+            <input id="InputLado1"  type="number">
+
+            <label for="InputLado2">
+                Escirbe cuanto mide el otro lado de tu triangulo
+            </label>
+            <input id="InputLado2"  type="number">
+
+            <label for="InputBase">
+                Escriba la base de su triangulo
+            </label>
+            <input id="InputBase"  type="number">
+
+            <button type="button" onclick="calcularperimetroTriangulo()">
+                Calcular el perímetro:
+            </button>
+            <button type="button" onclick="calcularareaTriangulo()">
+                Calcular el área:
+            </button>
+            <button type="button" onclick="altura()">
+                Calcular la altura del triángulo Isoceles:
+            </button>
+        </form>
+    </section>
+    </main>
+</body>
+</html>
