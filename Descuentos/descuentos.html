@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <h1>
+            Porcentajes y descuentos
+        </h1>
+        <p>Este es el segundo taller del Curso Práctico de JavaScript.
+        </p>
+
+    </header>
+    
+    <section >
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+
+        <form class="conatiner">
+            <label for="InputPrice" class="box1">Escribe el precio de tu producto:</label>
+            <input id="InputPrice" type="number" class="box2">
+            
+            <label for="InputDescount" class="box3">Escribe el descuento de tu producto (%)</label>
+            <input id="InputDescount" type="number" class="box3">
+            
+            <label for="InputCupon">Escribe si tiene algun cupon de descuento</label>
+            <p id="CuponesT"></p>
+            <input id="InputCupon" type="text" class="box4">
+            
+            <button type="button" onclick="descuentoPrecio()" class="box4"> Calcular el precio con Descuentos</button>
+            
+            <p id="ResultP" class="box5"></p> <!--Con esto lo que hago es dejar una etiqueta para que me regrese el resultado que enviaremos desde java usando el ID que le asignamos. El type number solo hace que se pueda ingresar numeros y no letras en el casillero, por eso en java sino calcula es porque se le debe trnasformar a numero -->
+        </form>
+    </section>
+
+    <script src="./descuentos.js"></script>
+</body>
+
+</html>
